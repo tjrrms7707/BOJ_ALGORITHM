@@ -1,4 +1,4 @@
-package boj.type.dynamic_pro;
+package boj.step.chapter10_recursion;
 
 import java.util.Scanner;
 
