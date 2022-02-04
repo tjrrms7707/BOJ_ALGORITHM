@@ -11,18 +11,19 @@ public class no_2292 {
     }
     public static void main(String[] args)throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(br.readLine());
 
-        int x = Integer.parseInt(br.readLine());
+        int count = 1;
+        int range = 2;
 
-        for (int i = 1; i <=x ; i++) {
-            if(cal(i)<=x &&cal(i+1)>x){
-                if(i%2==0){
-                    System.out.println((x-cal(i)+1)+"/"+(i-x+cal(i)));
-                }else
-                    System.out.println((i-x+cal(i))+"/"+(x-cal(i)+1));
-
-                break;
+        if(N == 1){
+            System.out.println(1);
+        }else{
+            while (range<=N){
+                range = range + (6*count);
+                count++;
             }
+            System.out.println(count);
         }
     }
 }

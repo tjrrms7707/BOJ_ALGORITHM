@@ -16,25 +16,16 @@ public class no_10250 {
             int B = Integer.parseInt(st.nextToken());
             int C = Integer.parseInt(st.nextToken());
             int X = C/A;
+            int x ,y ;
             if(C%A==0){
-                sb.append(A);
-                if(X<9){
-                    sb.append("0").append(X);
-                }else {
-                    sb.append(X);
-                }
+                y = A * 100 ;
+                x = X;
+
             }else{
-                sb.append(C-(A*X));
-                if(X<9){
-                    sb.append("0").append(X+1);
-                }else {
-                    sb.append(X+1);
-                }
+                y = (C%A)*100;
+                x = X+1;
             }
-
-
-
-            sb.append("\n");
+            sb.append(x+y).append("\n");
         }
         System.out.println(sb);
 
