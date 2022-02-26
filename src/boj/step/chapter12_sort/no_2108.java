@@ -1,4 +1,4 @@
-package boj.step.chapter12;
+package boj.step.chapter12_sort;
 
 import java.io.BufferedReader;
 import java.io.IOException;
